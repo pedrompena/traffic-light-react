@@ -1,12 +1,117 @@
-
-/* 
-
-    You can write your own styles here...
+* {
+    margin: 0;
+    padding: 0;
+    }
     
+    body {
+        background: rgb(34, 34, 34);
+        font-family: 'Montserrat', sans-serif;
+    }
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
+    .title {
+        font-size: 3vh;
+        font-weight: 700;
+        color: yellow;
+        text-shadow: 0.5vh 0.5vh 1vh black;
+    }
     
-    import 'relative/path/to/stylesheet.scss';
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10vh;
+    }
+    
+    .traffic-light {
+        background-color: rgb(15, 15, 15);
+        border: 2vh solid rgb(180, 180, 180);
+        border-radius: 10vh;
+        display: flex;
+        gap: 3vh;
+        padding: 5vh;
+        box-shadow: 1vh 1vh 3vh black;
+    }
+    
+    .light {
+        width: 20vh;
+        height: 20vh;
+        border-radius: 100%;
+        border: 1vh solid rgb(0, 0, 0, 0.2);
+    }
 
-*/
+    .light:hover {
+        cursor: pointer;
+    }
+    
+    .light-red {
+        background-color: red;
+        opacity: 0.1;
+    }
+    
+    .light-yellow {
+        background-color: yellow;
+        opacity: 0.1;
+    }
+    
+    .light-green {
+        background-color: green;
+        opacity: 0.1;
+    }
+    
+    .light-purple {
+        background-color: purple;
+        opacity: 0.1;
+    }
+    
+    .red-on {
+        opacity: 1;
+        box-shadow: 0.5vh 0.5vh 5vh red;
+    }
+    
+    .yellow-on {
+        opacity: 1;
+        box-shadow: 0.5vh 0.5vh 5vh yellow;
+    }
+    
+    .green-on {
+        opacity: 1;
+        box-shadow: 0.5vh 0.5vh 5vh green;
+    }
+    
+    .purple-on {
+        opacity: 1;
+        box-shadow: 0.5vh 0.5vh 5vh purple;
+    }
+
+    .purple-button {
+        width: 20vh;
+        height: 10vh;
+        border: 1vh solid rgb(128, 0, 128);
+        border-radius: 2vh;
+        background-color: rgb(128, 0, 128, 0.5);
+        color: rgb(128, 0, 128);
+        font-size: 3vh;
+        font-weight: 700;
+    }
+
+    .purple-button:hover {
+        cursor: pointer;
+    }
+    
+    .footer {
+        color: rgb(180, 180, 180);
+        background-color: rgb(180, 180, 180, 0.1);
+        width: 100%;
+        text-align: center;
+        justify-self: flex-end;
+        padding: 1%;
+    }
+    
+    .footer a {
+        color: yellow;
+        text-decoration: none;
+        text-shadow: 0.1vh 0.1vh 0.5vh rgb(0, 0, 0);
+    }
+    
