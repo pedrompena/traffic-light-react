@@ -44,6 +44,7 @@
 
     .light:hover {
         cursor: pointer;
+        scale: 1.02;
     }
     
     .light-red {
@@ -86,6 +87,12 @@
         box-shadow: 0.5vh 0.5vh 5vh purple;
     }
 
+    .buttons-container {
+        display: flex;
+        padding: 3vh;
+        gap: 2vh;
+    }
+
     .purple-button {
         width: 20vh;
         height: 10vh;
@@ -95,10 +102,33 @@
         color: rgb(128, 0, 128);
         font-size: 3vh;
         font-weight: 700;
+        box-shadow: 0.5vh 0.5vh 2vh black;
+        opacity: 0.7;
     }
 
     .purple-button:hover {
         cursor: pointer;
+        opacity: 1;
+        scale: 1.02;
+    }
+
+    .cyclic-button {
+        width: 20vh;
+        height: 10vh;
+        border: 1vh solid rgb(255, 165, 0);
+        border-radius: 2vh;
+        background-color: rgb(255, 165, 0, 0.5);
+        color: rgb(255, 165, 0);
+        font-size: 3vh;
+        font-weight: 700;
+        box-shadow: 0.5vh 0.5vh 2vh black;
+        opacity: 0.7;
+    }
+
+    .cyclic-button:hover {
+        cursor: pointer;
+        opacity: 1;
+        scale: 1.02;
     }
     
     .footer {
